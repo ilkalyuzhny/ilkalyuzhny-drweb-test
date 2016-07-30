@@ -1,0 +1,317 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background: url(../images/bg.png) repeat center;
+  font: normal 1em 'Arial';
+  color: #4a545d;
+}
+
+/**прибиваю footer к низу начало*/
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  min-width: 970px;
+  height: auto !important;
+  /*overflow: hidden;*/
+}
+.wrapper:after {
+  content: "";
+  height: 200px;
+  display: block;
+}
+.page-footer {
+  min-width: 970px;
+  height: 200px;
+  margin-top: -60px;
+}
+/**прибиваю footer к низу конец*/
+
+/**общие классы начало*/
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.pull-left {
+  float: left; /*!important*/
+}
+.pull-right {
+  float: right; /*!important*/
+}
+.container:before, .clearfix:before,
+.container:after, .clearfix:after {
+  content: " "; /**1*/
+  display: block; /**2*/
+}
+.container:after, .clearfix:after {
+  clear: both;
+}
+/**общие классы конец*/
+
+/**header start*/
+.headers {
+  height: 176px;
+}
+.container-big {
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  background: url(../images/header-bg.jpg);
+}
+.header-logo {
+  width: 236px; /*234px*/
+  height: 59px;
+  margin: 0;
+  position: relative;
+  background: #68b905;
+}
+.logo {
+  width: 170px;
+  height: 41px;
+/*background: url(../images/logo.png) no-repeat center;*/
+}
+.logo-img {
+  padding: 9px 22px;
+}
+.header-registr {
+  width: 236px;
+  height: 59px;
+  position: relative;
+  background: #335f44;
+  margin-top: -59px;
+  margin-left: 241px;
+}
+.vhod {
+  position: relative;
+  width: 104px;
+  padding-top: 31px;
+  padding-left: 16px;
+  background-image: url("../images/icon-vhod.png");
+  background-repeat: no-repeat;
+  background-position: 17px 6px;
+}
+.vhod-link {
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+}
+.vhod-link:hover {
+  color: #7cd423;
+}
+.str {
+  width: 13px;
+  height: 7px;
+  background-image: url("../images/icon-str.png");
+  background-repeat: no-repeat;
+  background-position: 5px 8px;
+  padding-top: 2px;
+  padding-left: 19px;
+}
+.registr {
+  position: relative;
+  top: -42px;
+  width: 86px;
+  padding-top: 23px;
+  padding-left: 132px;
+  background-image: url("../images/icon-register.png");
+  background-repeat: no-repeat;
+  background-position: 133px 0px;
+}
+.registr-link {
+  color: #7cd423;
+  font-size: 13px;
+  font-family: 'Arial', sans-serif;
+}
+.registr-link:hover {
+  text-decoration: none;
+}
+
+/*Навигация начало*/
+.navigation {
+  height: 40px;
+}
+.navigation-item {
+  margin: 0 auto;
+  padding: 3px 0;
+}
+.navigation-link {
+  display: inline-block;
+  width: 116px;
+  height: 24px;
+  background: #68b905;
+  padding-top: 8px;
+  /*margin-top: -10px;*/
+  list-style-type: none;
+  text-align: center;
+}
+.navigation-linkitem {
+  display: block;
+  padding-top: 0px;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+}
+.navigation-link:hover {
+  color: #fff;
+  background-color: rgba(104, 185, 5, 0.0);
+  transition: 0.3s;
+}
+.navigation-link.current {
+  color: #fff;
+  background-color: rgba(104, 185, 5, 0.0);
+}
+/*Навигация конец*/
+
+.names-banner {
+  float: left;
+  padding-top: 9px;
+  padding-left: 40px;
+}
+
+/**форма поиска начало*/
+.search {
+  position: relative;
+  float: right;
+  width: 105px;
+  min-height: 24px;
+  padding-top: 8px;
+  padding-right: 9px;
+}
+.search input {
+  border: none;
+}
+.search .input {
+  width: 100%;
+  padding: 3px 37px 4px 15px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+/*  box-shadow: inset 0 0 5px rgba(0,0,0,0.1),
+  inset 0 1px 2px rgba(0,0,0,0.3);*/
+  background: #055700;
+  font: 14px Arial, sans-serif;
+  font-style: italic;
+  color: #4f8e30;
+  outline: none;
+}
+.search .input:focus {
+/*  box-shadow: inset 0 0 5px rgba(0,0,0,0.2),
+  inset 0 1px 2px rgba(0,0,0,0.4);*/
+  background: #055700;
+  color: #4f8e30;
+}
+.search .submit {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  width: 37px;
+  height: 100%;
+  cursor: pointer;
+  background: url(../images/search.png) 50% no-repeat;
+  background-position: 0px 15px;
+  opacity: 0.5;
+}
+.search .submit:hover {
+  opacity: 0.8;
+}
+/** для стилизации инпутов Chrome и Safari*/
+input[type="search"] {
+  -webkit-appearance: none;
+}
+/**форма поиска конец*/
+
+.text-p {
+  float: left;
+  padding-top: 1px;
+  padding-left: 40px;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+}
+.soc-buttons {
+  float: right;
+  margin: -14px 8px;
+}
+.socials {
+  display: inline-block;
+/*  margin-left: 40px;*/
+}
+.socials-link {
+  display: block;
+  width: 23px;
+	height: 23px;
+	margin-left: 24px;
+  margin-top: 20px;
+}
+.one {
+  background-image: url(../images/iconset-socials.png);
+  background-position: 0px 2px;
+  text-indent: -9999px;
+}
+.two {
+  background-image: url(../images/iconset-socials.png);
+  background-position: -61px -89px;
+  text-indent: -9999px;
+}
+.three {
+  background-image: url(../images/iconset-socials.png);
+  background-position: -120px 0px;
+  text-indent: -9999px;
+}
+.four {
+  background-image: url(../images/iconset-socials.png);
+  background-position: -164px 0px;;
+  text-indent: -9999px;
+}
+.five {
+  background-image: url(../images/iconset-socials.png);
+  background-position: -215px 0px;
+  text-indent: -9999px;
+}
+/**header end*/
+
+/**footer start*/
+.page-footer {
+  width: 960px;
+  height: 200px;
+  margin: 0 auto;
+  font-family: 'fira_sanslight';
+  color: #4a545d;
+  background: #C8EDC2;
+}
+.page-footer .container {
+  padding-top: 26px;
+  position: relative;
+}
+.page-footer .copyright {
+  margin: 0 180px;
+  padding-top: 7px;
+  text-align: center;
+  font-size: 13px;
+}
+.page-footer .lock {
+  position: absolute;
+  top: 27px;
+  left: 34px;
+}
+.lock .lock-link {
+  display: block;
+  height: 40px;
+  font-family: 'fira_sansbook';
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a545d;
+  text-decoration: none;
+  background: url(../images/spaider.png) no-repeat;
+  width: 48px;
+  height: 32px;
+  padding-left: 24px;
+}
+.lock .lock-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/**footer end*/
